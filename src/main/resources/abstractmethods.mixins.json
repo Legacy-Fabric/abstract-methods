@@ -1,9 +1,9 @@
 {
   "required": true,
   "package": "io.github.legacy_fabric.mixin",
-  "mixins": [
-    "bossbar.EnderDragonEntityMixin",
-    "bossbar.WitherEntityMixin"
+  "client": [
+    "client.bossbar.EnderDragonEntityMixin",
+    "client.bossbar.WitherEntityMixin"
   ],
   "compatibilityLevel": "JAVA_8",
   "injectors": {
