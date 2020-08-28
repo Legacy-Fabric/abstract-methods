@@ -30,8 +30,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: ${{ GITHUB_SHA }}
+        release_name: Release ${{ GITHUB_SHA }}
         body: A changelog can be found at https://github.com/Legacy-Fabric/abstractmethods/commits
         draft: false
         prerelease: false
