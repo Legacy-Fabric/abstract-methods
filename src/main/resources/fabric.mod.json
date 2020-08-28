@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "abstractmethods",
+  "name": "Abstract methods",
+  "description": "A temporary solution to AbstractMethodErrors",
+  "version": "${version}",
+  "license": "Apache-2.0",
+  "environment": "*",
+  "contact": {
+    "homepage": "https://legacy-fabric.github.io/",
+    "irc": "irc://irc.esper.net:6667/legacyfabric",
+    "issues": "https://github.com/Legacy-Fabric/abstractmethods/issues",
+    "sources": "https://github.com/Legacy-Fabric/abstractmethods"
+  },
+  "mixins": [
+    "abstractmethods.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2"
+  },
+  "authors": [
+    "Legacy-Fabric"
+  ]
+}
