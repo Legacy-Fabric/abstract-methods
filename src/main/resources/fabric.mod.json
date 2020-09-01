@@ -20,5 +20,6 @@
   },
   "authors": [
     "Legacy-Fabric"
-  ]
+  ],
+  "accessWidener": "abstractmethods.accesswidener"
 }

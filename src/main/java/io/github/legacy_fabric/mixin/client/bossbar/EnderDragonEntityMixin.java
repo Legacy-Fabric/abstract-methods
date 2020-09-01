@@ -18,7 +18,7 @@ public abstract class EnderDragonEntityMixin extends MobEntity implements BossBa
     }
 
     @Override
-    public float method_7143() {
-        return this.getMaxHealth();
+    public float getMaxHealth() {
+        return super.getMaxHealth();
     }
 }

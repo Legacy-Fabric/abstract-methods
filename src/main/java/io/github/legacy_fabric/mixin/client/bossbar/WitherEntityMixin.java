@@ -18,7 +18,7 @@ public abstract class WitherEntityMixin extends MobEntity implements BossBarProv
     }
 
     @Override
-    public float method_7143() {
-        return this.getMaxHealth();
+    public float getMaxHealth() {
+        return super.getMaxHealth();
     }
 }
