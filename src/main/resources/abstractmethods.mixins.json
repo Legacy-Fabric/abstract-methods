@@ -6,7 +6,6 @@
     "defaultRequire": 1
   },
   "client": [
-    "client.bossbar.EnderDragonEntityMixin",
-    "client.bossbar.WitherEntityMixin"
+    "client.bossbar.BossBarMixin"
   ]
 }
