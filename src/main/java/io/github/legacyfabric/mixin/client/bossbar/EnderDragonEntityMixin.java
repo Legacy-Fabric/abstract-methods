@@ -15,4 +15,8 @@ public class EnderDragonEntityMixin extends MobEntity {
     public float f_() {
         return this.getMaxHealth();
     }
+
+    public float method_8397() {
+        return this.getMaxHealth();
+    }
 }
