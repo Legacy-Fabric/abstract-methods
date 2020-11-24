@@ -6,7 +6,8 @@
     "defaultRequire": 1
   },
   "mixins": [
-    "client.bossbar.EnderDragonEntityMixin",
-    "client.bossbar.WitherEntityMixin"
+    "client.bossbar.BossBarMixin",
+    "client.bossbar.EnderDragonEntityRendererMixin",
+    "client.bossbar.WitherEntityRendererMixin"
   ]
 }
