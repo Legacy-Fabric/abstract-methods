@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 public class BossBarMixin {
     /**
      * @author blucobalt
+     * @reason hacky fix
      */
     @Overwrite
     public static void method_3301(BossBarProvider provider, boolean bl) {}
