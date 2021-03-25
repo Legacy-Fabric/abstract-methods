@@ -24,20 +24,20 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Declare some variables
-      id: vars
-      shell: bash
-      run: |
-        echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
-        echo "::set-output name=sha::$(git rev-parse HEAD)"
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ steps.vars.outputs.sha_short }}
-        release_name: ${{ steps.vars.outputs.sha }}
-        body: A changelog can be found at https://github.com/Legacy-Fabric/abstractmethods/commits
-        draft: false
-        prerelease: false
+#     - name: Declare some variables
+#       id: vars
+#       shell: bash
+#       run: |
+#         echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+#         echo "::set-output name=sha::$(git rev-parse HEAD)"
+#     - name: Create Release
+#       id: create_release
+#       uses: actions/create-release@v1
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       with:
+#         tag_name: ${{ steps.vars.outputs.sha_short }}
+#         release_name: ${{ steps.vars.outputs.sha }}
+#         body: A changelog can be found at https://github.com/Legacy-Fabric/abstractmethods/commits
+#         draft: false
+#         prerelease: false
