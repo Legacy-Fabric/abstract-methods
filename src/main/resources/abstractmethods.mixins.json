@@ -1,13 +1,12 @@
 {
   "required": true,
-  "package": "net.legacyfabric.mixin",
+  "package": "net.legacyfabric.abstractmethods.mixin",
   "compatibilityLevel": "JAVA_8",
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "client.bossbar.BossBarMixin",
-    "client.bossbar.EnderDragonEntityRendererMixin",
-    "client.bossbar.WitherEntityRendererMixin"
+    "EnderDragonEntityMixin",
+    "WitherEntityMixin"
   ]
 }
