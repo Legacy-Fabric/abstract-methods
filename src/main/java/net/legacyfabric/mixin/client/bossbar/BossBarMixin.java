@@ -1,4 +1,4 @@
-package io.github.legacyfabric.mixin.client.bossbar;
+package net.legacyfabric.mixin.client.bossbar;
 
 import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.BossBarProvider;
@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.Overwrite;
 public class BossBarMixin {
     /**
      * @author blucobalt
-     * @reason hacky fix
+     * @reason overwrite the method that causes the "abstractmethoderror crash" to do nothing
      */
     @Overwrite
-    public static void method_3301(BossBarProvider provider, boolean bl) {}
+    public static void update(BossBarProvider provider, boolean bl) {}
 }

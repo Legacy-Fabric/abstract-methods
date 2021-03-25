@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "abstractmethods",
   "name": "Abstract methods",
-  "description": "A temporary solution to AbstractMethodErrors",
+  "description": "A hacky solution to AbstractMethodErrors",
   "version": "${version}",
   "license": "Apache-2.0",
   "environment": "*",
@@ -19,6 +19,6 @@
     "fabricloader": ">=0.8.2"
   },
   "authors": [
-    "Legacy-Fabric"
+    "LegacyFabric and contributors"
   ]
 }

@@ -1,4 +1,4 @@
-package io.github.legacyfabric.mixin.client.bossbar;
+package net.legacyfabric.mixin.client.bossbar;
 
 import net.minecraft.client.render.entity.WitherEntityRenderer;
 import net.minecraft.entity.boss.WitherEntity;
@@ -12,10 +12,10 @@ import static net.minecraft.entity.boss.BossBar.*;
 @Mixin(WitherEntityRenderer.class)
 public class WitherEntityRendererMixin {
     @Inject(method = "render", at = @At("TAIL"))
-    private void render(WitherEntity witherEntity, double d, double e, double f, float g, float h, CallbackInfo ci) {
-        field_4188 = witherEntity.getHealth() / witherEntity.getMaxHealth();
+    private void render(WitherEntity wither, double d, double e, double f, float g, float h, CallbackInfo ci) {
+        bossHealth = wither.getHealth() / wither.getMaxHealth();
         field_4189 = 100;
-        field_4190 = witherEntity.getName().asFormattedString();
+        bossName = wither.getName().asFormattedString();
         field_4191 = true;
     }
 }

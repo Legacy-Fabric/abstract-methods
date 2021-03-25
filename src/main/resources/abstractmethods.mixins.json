@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "io.github.legacyfabric.mixin",
+  "package": "net.legacyfabric.mixin",
   "compatibilityLevel": "JAVA_8",
   "injectors": {
     "defaultRequire": 1
